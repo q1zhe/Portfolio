@@ -39,7 +39,7 @@
       <!-- Intro -->
       <article id="intro">
         <h2 class="major">Intro</h2>
-        <p>Hello! I'm Qizhe Yew, a passionate software developer with interests in web development, data science, and distributed systems. I enjoy solving real-world problems using elegant code and clean design.</p>
+        <p>Hello! I'm Qizhe Yew, a passionate software developer with interests in web development, data science, and distributed systems. I enjoy solving real-world problems using effective code and clean design.</p>
         <p>You will find some of the projects I've worked on here, more about my background, and how to get in touch.</p>
       </article>
 
@@ -72,6 +72,12 @@
               <em>Designed and implemented goal-directed planning agents using PDDL, modelling multiple domains to demonstrate symbolic reasoning, constraint-based action planning, and solver-driven plan generation under varying problem complexities.</em><br />
             <a href="#automated-planning-project" class="project-button">View full project →</a>
           </div>
+          <div class="project-card">
+            <strong>Meteorological Data Visualisation Dashboard (Tableau)</strong><br />
+              <em>Built a Tableau Public dashboard visualising daily wind data for LGA (Airport) in 2013, with all unit conversions and daily averages calculated directly in Tableau.</em><br />
+            <a href="#wind-dashboard-project" class="project-button">View full project →</a>
+          </div>
+
       </article>
 
     <!-- LLM Project -->
@@ -349,6 +355,13 @@
         Training curves indicate stable convergence with reduced overfitting after
         introducing regularisation, demonstrating effective model optimisation.
       </p>
+
+      <figure class="project-figure">
+        <img src="images/ecg-training-curve.png" alt="Training and validation loss curves for ECG model">
+        <figcaption>
+          Training and validation loss showing reduced overfitting after applying dropout and batch normalisation.
+        </figcaption>
+      </figure>
 
       <hr />
 
@@ -835,6 +848,95 @@
           </li>
         </ul>
       </article>
+
+      <!-- Wind Dashboard Project -->
+      <article id="wind-dashboard-project">
+        <h2 class="major">Meteorological Wind Dashboard (Tableau)</h2>
+
+        <p>
+          <strong>Daily Wind Data Visualisation for LGA (2013)</strong><br />
+          This project presents a Tableau dashboard analysing daily wind conditions at
+          LaGuardia Airport (LGA) throughout 2013, using interactive visualisation to
+          explore trends, variability, and wind behaviour over time.
+        </p>
+
+        <h3>Why This Project Matters</h3>
+        <p>
+          Weather data is often noisy and difficult to interpret in raw form. This dashboard
+          demonstrates how interactive visualisation can make complex meteorological data
+          easier to explore, communicate, and interpret for real-world decision making.
+        </p>
+
+        <hr />
+
+        <h3>Tools & Environment</h3>
+        <ul>
+          <li><strong>Platform:</strong> Tableau Public</li>
+          <li><strong>Dataset source:</strong> nycflights13_weather.csv</li>
+          <li><strong>Data processing:</strong> Calculations performed inside Tableau</li>
+          <li><strong>Output:</strong> Interactive dashboard + written report (PDF)</li>
+        </ul>
+
+        <hr />
+
+        <h3>Dataset</h3>
+        <p>
+          <strong>NYC Flights 2013 Weather Dataset</strong>
+        </p>
+        <ul>
+          hourly meteorological data for three airports in New York: LGA, JFK, and EWR for the whole year of 2013.
+        </ul>
+
+        <hr />
+
+        <h3>Data Preparation & Calculations</h3>
+        <p>
+          All unit conversions and derived metrics were performed directly in Tableau,
+          including daily averages and calculated fields based on the raw dataset.
+        </p>
+
+        <ul>
+          <li>Unit conversions inside Tableau</li>
+          <li>Daily aggregation and averages</li>
+          <li>Calculated fields for clearer interpretation</li>
+          <li>Clean dashboard layout for interactive exploration</li>
+        </ul>
+
+        <hr />
+
+        <h3>Evaluation & Results</h3>
+        <p>
+          The dashboard provides a clear view of seasonal wind variation across 2013 and supports quick exploration of daily changes through Tableau’s interactive controls. It also highlights the 10 windiest days, with exact values available via hover tooltips.
+        </p>
+
+        <figure class="project-figure">
+          <img src="images/wind-dashboard-tableau.png" alt="Tableau wind dashboard showing daily wind trends for LGA in 2013">
+          <figcaption>
+            Tableau dashboard visualising daily wind behaviour at LGA (2013).
+          </figcaption>
+        </figure>
+
+        <hr />
+
+        <h3>Resources</h3>
+        <ul>
+          <li>
+            <a href="https://github.com/q1zhe/Simple-Meteorological-Data-Visualisation-Dashboard-Using-Tableau" target="_blank">
+              GitHub repository
+            </a>
+          </li>
+          <li>
+            <a href="https://public.tableau.com/app/profile/yew.qizhe/viz/Dailywinddatavisualisation/Dashboard1" target="_blank">
+              View dashboard on Tableau Public
+            </a>
+          </li>
+        </ul>
+
+        <div class="project-footer">
+          <a href="#work" class="button small">← Back to Projects</a>
+        </div>
+      </article>
+
 
     </div>
   </div>

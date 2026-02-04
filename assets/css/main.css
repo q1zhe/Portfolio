@@ -1751,4 +1751,21 @@ input, select, textarea {
 		transform: translateY(-2px);
 		}
 
+		.project-figure {
+		margin: 2rem 0;
+		text-align: center;
+		}
+
+		.project-figure img {
+		max-width: 100%;
+		border-radius: 6px;
+		}
+
+		.project-figure figcaption {
+		font-size: 0.85rem;
+		color: #777;
+		margin-top: 0.5rem;
+		}
+
+
 
